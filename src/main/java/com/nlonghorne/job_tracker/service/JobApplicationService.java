@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class JobApplicationService {
@@ -39,7 +38,7 @@ public class JobApplicationService {
      * @return a list of JobApplications
      */
     public List<JobApplication> getAllByCompany(String companyName) {
-        return jobRepository.findByCompany(companyName);
+        return jobRepository.findByCompanyName(companyName);
     }
 
     /**

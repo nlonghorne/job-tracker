@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nlonghorne</groupId>
-	<artifactId>job-tracker</artifactId>
+	<artifactId>job-tracker-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>job-tracker</name>
 	<description>Job application tracker</description>
@@ -76,6 +76,11 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
 		</dependency>
 	</dependencies>
 

@@ -9,5 +9,5 @@ import java.util.List;
 public interface JobApplicationRepository extends
         JpaRepository <JobApplication, Long> {
     List<JobApplication> findByFollowUpDate(LocalDate date);
-    List<JobApplication> findByCompany(String companyName);
+    List<JobApplication> findByCompanyName(String companyName);
 }

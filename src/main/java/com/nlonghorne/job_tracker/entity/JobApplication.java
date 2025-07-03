@@ -1,24 +1,23 @@
 package com.nlonghorne.job_tracker.entity;
 
 import com.nlonghorne.job_tracker.enums.JobStatus;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "job_applications")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class JobApplication {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String companyName;
     private String jobTitle;
